@@ -84,7 +84,7 @@ def find_config_file(args: Namespace) -> str:
         paths = [
             os.path.join(os.getcwd(), filename),
             Path.home() / ".torrentfile" / filename,
-            Path.home() / ".config" / ".torrentfile" / filename,
+            Path.home() / ".config" / filename,
         ]
         for subpath in paths:
             if os.path.exists(subpath):
