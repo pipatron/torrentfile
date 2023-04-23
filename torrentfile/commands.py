@@ -235,6 +235,7 @@ def info(args: Namespace) -> str:
     text = ["-" * most, "\n"] + text + ["\n", "-" * most]
     output = "\n".join(text)
     logger.info(output)
+    print(output)
     return output
 
 
